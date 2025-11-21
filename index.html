@@ -10,7 +10,13 @@
     <button onclick="calculateSum()">Calculate Sum</button>
     <p>Result: <span id="result"></span></p>
 	
-  
+  	<h2>Add Two Numbers</h2>
+    <input type="number" id="pnum1" placeholder="Enter first number">
+    <input type="number" id="pnum2" placeholder="Enter second number">
+    <button onclick="calculateproduct()">Calculate Product</button>
+    <p>Result: <span id="result"></span></p>
+
+	
 	<script>
         function calculateSum() {
             // Get the values from the input fields
@@ -23,7 +29,19 @@
             // Display the result
             document.getElementById('result').textContent = sum;
         }
+
+		function calculateSum() {
+            // Get the values from the input fields
+            let num1 = parseFloat(document.getElementById('pnum1').value);
+            let num2 = parseFloat(document.getElementById('pnum2').value);
+            
+            // Calculate the sum
+            let sum = pnum1 * pnum2;
+            
+            // Display the result
+            document.getElementById('result').textContent = product;
 		
     </script>
 </body>
 </html>
+
