@@ -16,6 +16,18 @@
     <button onclick="calculateproduct()">Calculate Product</button>
     <p>Result: <span id="product"></span></p>
 
+	<h2>subtracting Two Numbers</h2>
+    <input type="number" id="dnum1" placeholder="Enter first number">
+    <input type="number" id="dnum2" placeholder="Enter second number">
+    <button onclick="calculatedifference()">Calculate difference</button>
+    <p>Result: <span id="result"></span></p>
+
+	<h2>dividing Two Numbers</h2>
+    <input type="number" id="qnum1" placeholder="Enter first number">
+    <input type="number" id="qnum2" placeholder="Enter second number">
+    <button onclick="calculateSum()">Calculate Sum</button>
+    <p>Result: <span id="result"></span></p>
+
 	
 	<script>
         function calculateSum() {
@@ -30,7 +42,7 @@
             document.getElementById('result').textContent = sum;
         }
 
-		function calculateSum() {
+		function calculateproduct() {
             // Get the values from the input fields
             let pnum1 = parseFloat(document.getElementById('pnum1').value);
             let pnum2 = parseFloat(document.getElementById('pnum2').value);
@@ -44,6 +56,7 @@
     </script>
 </body>
 </html>
+
 
 
 
